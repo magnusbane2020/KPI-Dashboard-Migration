@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI temp/autosave
+*.pbix.tmp
+*.pbit.tmp
+*.AutoRecovery.save
+*.rsd
+
+# Misc editors
+.vscode/
+.idea/
