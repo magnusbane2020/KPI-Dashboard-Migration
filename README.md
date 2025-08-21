@@ -40,7 +40,7 @@ Sample dataset provided in both **SQL script** and **CSV format**.
 
 ## 🧮 Power BI Measures (DAX)
 
-```DAX
+...DAX
 Revenue = SUMX(sales, sales[quantity] * sales[unit_price])
 Orders = DISTINCTCOUNT(sales[order_id])
 Sessions = SUM(traffic[sessions])
@@ -51,8 +51,9 @@ Revenue YoY % =
         [Revenue] - CALCULATE([Revenue], DATEADD('Date'[Date], -1, YEAR)),
         CALCULATE([Revenue], DATEADD('Date'[Date], -1, YEAR))
     )
+---
 
-🔄 Notes on Migration (QuickSight → Power BI)
+## 🔄 Notes on Migration (QuickSight → Power BI)
 
 Calculated fields → DAX measures
 
@@ -62,12 +63,16 @@ Filters / controls → Slicers
 
 Top N visuals → DAX + Filters (replicates QS “Top movers”)
 
-📸 Screenshots
+---
+
+## 📸 Screenshots
 
 Dashboard_Overview.jpg
 
 Top_Products.jpg
 
-📜 License
+---
+
+## 📜 License
 
 MIT
