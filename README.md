@@ -40,12 +40,12 @@ Sample dataset provided in both **SQL script** and **CSV format**.
 
 ## 🧮 Power BI Measures (DAX)
 
-...DAX
-Revenue = SUMX(sales, sales[quantity] * sales[unit_price])
-Orders = DISTINCTCOUNT(sales[order_id])
-Sessions = SUM(traffic[sessions])
-Conversion Rate = DIVIDE([Orders], [Sessions])
-Average Order Value = DIVIDE([Revenue], [Orders])
+'''DAX
+Revenue = SUMX(sales, sales[quantity] * sales[unit_price]).
+Orders = DISTINCTCOUNT(sales[order_id]).
+Sessions = SUM(traffic[sessions]).
+Conversion Rate = DIVIDE([Orders], [Sessions]).
+Average Order Value = DIVIDE([Revenue], [Orders]).
 Revenue YoY % =
     DIVIDE(
         [Revenue] - CALCULATE([Revenue], DATEADD('Date'[Date], -1, YEAR)),
