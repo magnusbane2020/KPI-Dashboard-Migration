@@ -50,7 +50,9 @@ Revenue YoY % = DIVIDE([Revenue] - CALCULATE([Revenue], DATEADD('Date'[Date], -1
 - **Top N** visuals work similarly; use DAX + filters to replicate QS “Top movers”.
 
 ## Screenshots
-(Insert screenshots from `screenshots/`.)
+
+![Overview](Dashboard_Overview.png)
+![Top Products](Top-Products.png)
 
 ## License
 MIT
